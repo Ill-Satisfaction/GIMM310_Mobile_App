@@ -14,6 +14,7 @@
 		28456D022807766A000DD42C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28456D012807766A000DD42C /* Assets.xcassets */; };
 		28456D052807766A000DD42C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28456D032807766A000DD42C /* LaunchScreen.storyboard */; };
 		28BE2B3628078BA900148E3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BE2B3428078BA900148E3B /* Main.storyboard */; };
+		28BE2B3828078F3B00148E3B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BE2B3728078F3B00148E3B /* Home.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		28456D012807766A000DD42C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28456D042807766A000DD42C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28BE2B3528078BA900148E3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = gimm_310_app/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		28BE2B3728078F3B00148E3B /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				28456D012807766A000DD42C /* Assets.xcassets */,
 				28BE2B3428078BA900148E3B /* Main.storyboard */,
 				28456D032807766A000DD42C /* LaunchScreen.storyboard */,
+				28BE2B3728078F3B00148E3B /* Home.storyboard */,
 			);
 			path = gimm_310_app;
 			sourceTree = "<group>";
@@ -127,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28456CF928077669000DD42C /* Scene.sks in Resources */,
+				28BE2B3828078F3B00148E3B /* Home.storyboard in Resources */,
 				28456D052807766A000DD42C /* LaunchScreen.storyboard in Resources */,
 				28456D022807766A000DD42C /* Assets.xcassets in Resources */,
 				28BE2B3628078BA900148E3B /* Main.storyboard in Resources */,
