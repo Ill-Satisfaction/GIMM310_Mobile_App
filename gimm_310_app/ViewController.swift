@@ -11,7 +11,22 @@ import ARKit
 
 class ViewController: UIViewController, ARSKViewDelegate {
     
+    @IBOutlet weak var username_txt: UITextField!
+    @IBOutlet weak var password_txt: UITextField!
+    @IBOutlet weak var signup_btn: UIButton!
+    @IBOutlet weak var login_btn: UIButton!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "main")
+        self.present(vc, animated: true)
+    }
+    
+    /*
     @IBOutlet var sceneView: ARSKView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,7 +74,8 @@ class ViewController: UIViewController, ARSKViewDelegate {
     func session(_ session: ARSession, didFailWithError error: Error) {
         // Present an error message to the user
         
-    }
+     let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("ViewController") as UIViewController
+     self.presentViewController(viewController, animated: false, completion: nil)}
     
     func sessionWasInterrupted(_ session: ARSession) {
         // Inform the user that the session has been interrupted, for example, by presenting an overlay
@@ -70,4 +86,5 @@ class ViewController: UIViewController, ARSKViewDelegate {
         // Reset tracking and/or remove existing anchors if consistent tracking is required
         
     }
+     */
 }
