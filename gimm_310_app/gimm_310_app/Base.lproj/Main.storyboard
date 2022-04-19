@@ -9,33 +9,15 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tva-gM-he4">
-            <objects>
-                <viewController id="hIA-Aq-msd" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="gF6-vE-foW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="JKC-bx-vNy"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <connections>
-                        <segue destination="BV1-FR-VrT" kind="show" id="H9S-zI-XDO"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rfg-Qm-QvE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-783" y="84"/>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
                 <viewController storyboardIdentifier="main" id="BV1-FR-VrT" customClass="ViewController" customModule="gimm_310_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U0K-SW-4ec">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="center" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="loS-qp-s2A">
-                                <rect key="frame" x="0.0" y="345.5" width="414" height="117"/>
+                                <rect key="frame" x="0.0" y="394.5" width="414" height="117"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ES8-Ab-C0p">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="34"/>
@@ -109,10 +91,68 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cMN-2t-e0d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="762" y="84"/>
+            <point key="canvasLocation" x="843" y="84"/>
+        </scene>
+        <!--ARView-->
+        <scene sceneID="NmL-fe-PNb">
+            <objects>
+                <viewController id="cvC-jM-j7V" userLabel="ARView" customClass="ViewController" customModule="gimm_310_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="THx-cS-ckg" userLabel="ARView" customClass="ARView" customModule="RealityKit">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXZ-wR-9jr" customClass="MessageLabel" customModule="gimm_310_app" customModuleProvider="target">
+                                <rect key="frame" x="5" y="49" width="404" height="60"/>
+                                <color key="backgroundColor" red="0.6922967941" green="0.6922967941" blue="0.6922967941" alpha="0.88345296959999997" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="bZs-9u-nNh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHF-TX-7sb" userLabel="Restart Experience Button Icon">
+                                <rect key="frame" x="365" y="109" width="44" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="5Mj-xm-TFT"/>
+                                    <constraint firstAttribute="width" constant="44" id="V7j-4k-iau"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="12"/>
+                                <state key="normal" image="restart"/>
+                                <state key="selected" image="restartPressed"/>
+                                <state key="highlighted" image="restartPressed"/>
+                                <connections>
+                                    <action selector="resetTracking" destination="cvC-jM-j7V" eventType="touchUpInside" id="NlF-zZ-hfA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="R1F-qh-6fp"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="R1F-qh-6fp" firstAttribute="trailing" secondItem="EXZ-wR-9jr" secondAttribute="trailing" constant="5" id="6LZ-yv-Adl"/>
+                            <constraint firstItem="EXZ-wR-9jr" firstAttribute="top" secondItem="R1F-qh-6fp" secondAttribute="top" constant="5" id="E9R-br-4Ko"/>
+                            <constraint firstItem="R1F-qh-6fp" firstAttribute="trailing" secondItem="dHF-TX-7sb" secondAttribute="trailing" constant="5" id="Usn-HW-wIA"/>
+                            <constraint firstItem="dHF-TX-7sb" firstAttribute="top" secondItem="EXZ-wR-9jr" secondAttribute="bottom" id="jWG-3p-GWT"/>
+                            <constraint firstItem="EXZ-wR-9jr" firstAttribute="leading" secondItem="R1F-qh-6fp" secondAttribute="leading" constant="5" id="jo5-By-LtZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="arView" destination="THx-cS-ckg" id="mUn-gv-xsE"/>
+                        <outlet property="messageLabel" destination="EXZ-wR-9jr" id="bPd-Xc-OJI"/>
+                        <outlet property="restartButton" destination="dHF-TX-7sb" id="mzG-UE-ggK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IkE-MK-WPu" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1675" y="84"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="EXZ-wR-9jr"/>
+    </designables>
     <resources>
+        <image name="restart" width="20" height="20"/>
+        <image name="restartPressed" width="16" height="16"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

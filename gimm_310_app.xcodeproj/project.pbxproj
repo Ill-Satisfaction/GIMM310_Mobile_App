@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		219429012808DA4F009E5250 /* ViewController+CoachingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219429002808DA4F009E5250 /* ViewController+CoachingOverlay.swift */; };
+		219429032808DA7B009E5250 /* MultipeerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219429022808DA7B009E5250 /* MultipeerSession.swift */; };
+		219429052808DA9F009E5250 /* MessageLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219429042808DA9F009E5250 /* MessageLabel.swift */; };
+		219429072808DAB8009E5250 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219429062808DAB8009E5250 /* Utilities.swift */; };
 		28456CF728077669000DD42C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28456CF628077669000DD42C /* AppDelegate.swift */; };
 		28456CF928077669000DD42C /* Scene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 28456CF828077669000DD42C /* Scene.sks */; };
 		28456CFB28077669000DD42C /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28456CFA28077669000DD42C /* Scene.swift */; };
@@ -18,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		219429002808DA4F009E5250 /* ViewController+CoachingOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+CoachingOverlay.swift"; sourceTree = "<group>"; };
+		219429022808DA7B009E5250 /* MultipeerSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerSession.swift; sourceTree = "<group>"; };
+		219429042808DA9F009E5250 /* MessageLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageLabel.swift; sourceTree = "<group>"; };
+		219429062808DAB8009E5250 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		28456CF328077669000DD42C /* gimm_310_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gimm_310_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28456CF628077669000DD42C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28456CF828077669000DD42C /* Scene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Scene.sks; sourceTree = "<group>"; };
@@ -67,6 +75,10 @@
 				28BE2B3428078BA900148E3B /* Main.storyboard */,
 				28456D032807766A000DD42C /* LaunchScreen.storyboard */,
 				28BE2B3728078F3B00148E3B /* Home.storyboard */,
+				219429002808DA4F009E5250 /* ViewController+CoachingOverlay.swift */,
+				219429022808DA7B009E5250 /* MultipeerSession.swift */,
+				219429042808DA9F009E5250 /* MessageLabel.swift */,
+				219429062808DAB8009E5250 /* Utilities.swift */,
 			);
 			path = gimm_310_app;
 			sourceTree = "<group>";
@@ -146,7 +158,11 @@
 			files = (
 				28456CFD28077669000DD42C /* ViewController.swift in Sources */,
 				28456CFB28077669000DD42C /* Scene.swift in Sources */,
+				219429072808DAB8009E5250 /* Utilities.swift in Sources */,
+				219429032808DA7B009E5250 /* MultipeerSession.swift in Sources */,
 				28456CF728077669000DD42C /* AppDelegate.swift in Sources */,
+				219429052808DA9F009E5250 /* MessageLabel.swift in Sources */,
+				219429012808DA4F009E5250 /* ViewController+CoachingOverlay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +311,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q8Q82JGFTG;
+				DEVELOPMENT_TEAM = SJH4B84W5W;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -325,7 +341,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q8Q82JGFTG;
+				DEVELOPMENT_TEAM = SJH4B84W5W;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
