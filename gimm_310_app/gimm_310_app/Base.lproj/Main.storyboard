@@ -67,7 +67,8 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="login"/>
                                                 <connections>
-                                                    <action selector="loginBtnPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="bVe-Fx-5Ki"/>
+                                                    <action selector="loginBtnPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Hay-dr-UGh"/>
+                                                    <segue destination="72k-1h-nQT" kind="show" id="CAG-pb-gmr"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -98,20 +99,39 @@
         <!--View Controller-->
         <scene sceneID="5BK-7M-XWc">
             <objects>
-                <viewController id="72k-1h-nQT" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="home" id="72k-1h-nQT" customClass="ViewController" customModule="gimm_310_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fx8-fj-wvf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B3h-Gz-oeY">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                            </arView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="lzV-yK-aiL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lzV-yK-aiL" firstAttribute="bottom" secondItem="B3h-Gz-oeY" secondAttribute="bottom" id="CEy-wz-bUD"/>
+                            <constraint firstItem="B3h-Gz-oeY" firstAttribute="leading" secondItem="lzV-yK-aiL" secondAttribute="leading" id="KEb-jU-qXS"/>
+                            <constraint firstItem="lzV-yK-aiL" firstAttribute="trailing" secondItem="B3h-Gz-oeY" secondAttribute="trailing" id="N2V-EE-YM6"/>
+                            <constraint firstItem="B3h-Gz-oeY" firstAttribute="top" secondItem="lzV-yK-aiL" secondAttribute="top" id="ZFN-9F-ROD"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="C8k-LY-Ltf"/>
+                    <connections>
+                        <outlet property="ARView" destination="B3h-Gz-oeY" id="7li-YS-nTT"/>
+                        <outlet property="arScene" destination="B3h-Gz-oeY" id="ZCi-7q-lZQ"/>
+                        <outlet property="arView" destination="B3h-Gz-oeY" id="70b-sR-vXX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cMN-2t-e0d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="762" y="84"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="oQQ-n4-ug9"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

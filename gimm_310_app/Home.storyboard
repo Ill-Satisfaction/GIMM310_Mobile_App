@@ -11,32 +11,74 @@
         <!--View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="Home" id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="home" id="Y6W-OH-hqX" customClass="ARViewController" customModule="gimm_310_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="homescreen WIP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIS-5v-haO">
-                                <rect key="frame" x="142.5" y="437.5" width="129.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <arView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x9a-NN-f9X">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </arView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="p6w-U2-qBW">
+                                <rect key="frame" x="0.0" y="831" width="414" height="31"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xuu-bt-Gid">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="31"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rtx-Xh-gyC">
+                                                <rect key="frame" x="0.0" y="0.0" width="138" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="hand.thumbsup.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="LikeButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="lsZ-tL-YxV"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPx-1e-jn0">
+                                                <rect key="frame" x="138" y="0.0" width="138" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="hand.thumbsdown.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="DislikeButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="lgP-Gs-oUq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Gh-g9-gxC">
+                                                <rect key="frame" x="276" y="0.0" width="138" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="questionmark.app.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="QuestionButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="uC3-yP-isu"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="YIS-5v-haO" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="0qp-jA-j2o"/>
-                            <constraint firstItem="YIS-5v-haO" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="sPv-J3-mrX"/>
+                            <constraint firstItem="x9a-NN-f9X" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Gr0-CR-WVj"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="p6w-U2-qBW" secondAttribute="trailing" id="TzV-lo-PJu"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="x9a-NN-f9X" secondAttribute="bottom" id="ZoP-rS-nAQ"/>
+                            <constraint firstItem="x9a-NN-f9X" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="o37-H6-Ssa"/>
+                            <constraint firstItem="p6w-U2-qBW" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="w1N-IR-Awy"/>
+                            <constraint firstItem="x9a-NN-f9X" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="wdG-Ui-yOL"/>
+                            <constraint firstItem="p6w-U2-qBW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="zCk-aq-4sI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="arView" destination="x9a-NN-f9X" id="3e2-a8-sSk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-16" y="65"/>
+            <point key="canvasLocation" x="-17.39130434782609" y="64.955357142857139"/>
         </scene>
     </scenes>
     <resources>
+        <image name="hand.thumbsdown.fill" catalog="system" width="128" height="121"/>
+        <image name="hand.thumbsup.fill" catalog="system" width="128" height="121"/>
+        <image name="questionmark.app.fill" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

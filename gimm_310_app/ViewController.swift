@@ -4,7 +4,7 @@
 //
 //  Created by Akiah Tullis on 4/13/22.
 //
-
+import Foundation
 import UIKit
 import SpriteKit
 import ARKit
@@ -26,9 +26,16 @@ class ViewController: UIViewController, ARSKViewDelegate {
         self.present(vc, animated: true)
     }
     
+
     @IBAction func loginBtnPressed(_ sender: Any) {
-        
-    }
+            let storyboard = UIStoryboard(name: "Home", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "home")
+            //self.present(vc, animated: true, completion:nil)
+        UIApplication.shared.keyWindow?.rootViewController = vc
+        // ^ this is depreciated, but it works sooo....
+}
+
+    
     
     /*
     @IBOutlet var sceneView: ARSKView!
