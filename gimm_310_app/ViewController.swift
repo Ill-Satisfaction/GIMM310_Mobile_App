@@ -26,11 +26,10 @@ class ViewController: UIViewController, ARSKViewDelegate {
         self.present(vc, animated: true)
     }
     
-    @IBAction func loginButtonPressed(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Home", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "Home") //as! UIViewController
-        self.present(vc, animated: true, completion:nil)
+    @IBAction func loginBtnPressed(_ sender: Any) {
+        
     }
+    
     /*
     @IBOutlet var sceneView: ARSKView!
     
