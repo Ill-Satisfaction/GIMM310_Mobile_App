@@ -16,54 +16,124 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <arView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x9a-NN-f9X">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                            </arView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="p6w-U2-qBW">
-                                <rect key="frame" x="0.0" y="831" width="414" height="31"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
+                                    <arView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x9a-NN-f9X">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="418"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="400" id="Xx5-gG-lLm"/>
+                                        </constraints>
+                                    </arView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xuu-bt-Gid">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="31"/>
+                                        <rect key="frame" x="0.0" y="418" width="414" height="150"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rtx-Xh-gyC">
-                                                <rect key="frame" x="0.0" y="0.0" width="138" height="31"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="138" height="150"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="hand.thumbsup.fill" catalog="system"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="ThumbsUpImg"/>
                                                 <connections>
                                                     <action selector="LikeButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="lsZ-tL-YxV"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPx-1e-jn0">
-                                                <rect key="frame" x="138" y="0.0" width="138" height="31"/>
+                                                <rect key="frame" x="138" y="0.0" width="138" height="150"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="hand.thumbsdown.fill" catalog="system"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="ThumbsDownImg" imagePadding="0.0"/>
                                                 <connections>
                                                     <action selector="DislikeButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="lgP-Gs-oUq"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Gh-g9-gxC">
-                                                <rect key="frame" x="276" y="0.0" width="138" height="31"/>
+                                                <rect key="frame" x="276" y="0.0" width="138" height="150"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="questionmark.app.fill" catalog="system"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="HandUpIcon"/>
                                                 <connections>
+                                                    <action selector="HandButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="vuC-2X-HBY"/>
                                                     <action selector="QuestionButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="uC3-yP-isu"/>
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="400" id="iUx-Ad-rDF"/>
+                                            <constraint firstAttribute="height" constant="150" id="k8W-fJ-nyK"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xwY-Se-CI9">
+                                        <rect key="frame" x="0.0" y="568" width="414" height="150"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLt-DM-xvF">
+                                                <rect key="frame" x="0.0" y="0.0" width="138" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="138" id="9mN-qX-wVZ"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="LaughingIcon"/>
+                                                <connections>
+                                                    <action selector="LaughingButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="KkL-1D-X1M"/>
+                                                    <action selector="LikeButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="2aD-fs-Xug"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJP-3L-IVQ">
+                                                <rect key="frame" x="138" y="0.0" width="138" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="138" id="Faj-CV-DAz"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="AngryIcon" imagePadding="0.0"/>
+                                                <connections>
+                                                    <action selector="AngryButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="e5f-KS-Fa8"/>
+                                                    <action selector="DislikeButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="bXD-h1-SjH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHF-6d-mdQ">
+                                                <rect key="frame" x="276" y="0.0" width="138" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="139" id="6PX-HA-gQs"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="138" id="c54-Tt-l5M"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="QuestionMark"/>
+                                                <connections>
+                                                    <action selector="QuestionButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="EvD-52-maP"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="LXP-CS-Q1X"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tq5-KV-TeD">
+                                        <rect key="frame" x="0.0" y="718" width="414" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nt-1h-L7o">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="ClearIcon" title=""/>
+                                                <connections>
+                                                    <action selector="ClearButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="yEa-0H-avq"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="3GZ-rl-RvN"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="415" id="iNw-Cj-jJi"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
                         <constraints>
-                            <constraint firstItem="x9a-NN-f9X" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Gr0-CR-WVj"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="p6w-U2-qBW" secondAttribute="trailing" id="TzV-lo-PJu"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="x9a-NN-f9X" secondAttribute="bottom" id="ZoP-rS-nAQ"/>
-                            <constraint firstItem="x9a-NN-f9X" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="o37-H6-Ssa"/>
-                            <constraint firstItem="p6w-U2-qBW" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="w1N-IR-Awy"/>
-                            <constraint firstItem="x9a-NN-f9X" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="wdG-Ui-yOL"/>
-                            <constraint firstItem="p6w-U2-qBW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="zCk-aq-4sI"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="p6w-U2-qBW" secondAttribute="trailing" id="0HP-BT-MO6"/>
+                            <constraint firstItem="p6w-U2-qBW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="1ye-1j-Zvj"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="p6w-U2-qBW" secondAttribute="bottom" id="rTV-oN-yEr"/>
+                            <constraint firstItem="p6w-U2-qBW" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="sFU-K2-Kbc"/>
                         </constraints>
                     </view>
                     <connections>
@@ -76,11 +146,15 @@
         </scene>
     </scenes>
     <resources>
-        <image name="hand.thumbsdown.fill" catalog="system" width="128" height="121"/>
-        <image name="hand.thumbsup.fill" catalog="system" width="128" height="121"/>
-        <image name="questionmark.app.fill" catalog="system" width="128" height="114"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <image name="AngryIcon" width="102" height="102"/>
+        <image name="ClearIcon" width="102" height="102"/>
+        <image name="HandUpIcon" width="102" height="102"/>
+        <image name="LaughingIcon" width="102" height="102"/>
+        <image name="QuestionMark" width="102" height="102"/>
+        <image name="ThumbsDownImg" width="102" height="102"/>
+        <image name="ThumbsUpImg" width="102" height="102"/>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

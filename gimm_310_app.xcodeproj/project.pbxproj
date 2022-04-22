@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D124C7528132E8700FA2BBA /* Like_Button.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 1D124C7428132E8700FA2BBA /* Like_Button.usdz */; };
+		1D124C79281332F700FA2BBA /* Dislike_Button.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 1D124C78281332F700FA2BBA /* Dislike_Button.usdz */; };
+		1D4FB82E2813548D00189F2A /* 3d_Poop_Emoji.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 1D4FB82D2813548D00189F2A /* 3d_Poop_Emoji.usdz */; };
+		1D4FB8312813590200189F2A /* LaughingEmojiModel.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 1D4FB8302813590200189F2A /* LaughingEmojiModel.usdz */; };
 		1D541318281200E000A236E8 /* UIforAR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D541317281200E000A236E8 /* UIforAR.swift */; };
 		1D56F69928120D3B001C05E8 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D56F69828120D3B001C05E8 /* ARViewController.swift */; };
-		1D56F69E28121906001C05E8 /* Toon_Thumbs_Up.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 1D56F69D28121906001C05E8 /* Toon_Thumbs_Up.usdz */; };
-		1D56F6A028121EEB001C05E8 /* 3d_Poop_Emoji.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 1D56F69F28121EEB001C05E8 /* 3d_Poop_Emoji.usdz */; };
 		28456CF728077669000DD42C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28456CF628077669000DD42C /* AppDelegate.swift */; };
 		28456CF928077669000DD42C /* Scene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 28456CF828077669000DD42C /* Scene.sks */; };
 		28456CFB28077669000DD42C /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28456CFA28077669000DD42C /* Scene.swift */; };
@@ -22,11 +24,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D124C7428132E8700FA2BBA /* Like_Button.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Like_Button.usdz; path = ../../../Downloads/Like_Button.usdz; sourceTree = "<group>"; };
+		1D124C7728132EF500FA2BBA /* Like_Button.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Like_Button.usdz; sourceTree = "<group>"; };
+		1D124C78281332F700FA2BBA /* Dislike_Button.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Dislike_Button.usdz; path = ../../../Downloads/Dislike_Button.usdz; sourceTree = "<group>"; };
+		1D124C7A281332FA00FA2BBA /* Dislike_Button.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Dislike_Button.usdz; sourceTree = "<group>"; };
+		1D4FB82D2813548D00189F2A /* 3d_Poop_Emoji.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = 3d_Poop_Emoji.usdz; path = ../../../Downloads/3d_Poop_Emoji.usdz; sourceTree = "<group>"; };
+		1D4FB82F2813549100189F2A /* 3d_Poop_Emoji.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = 3d_Poop_Emoji.usdz; sourceTree = "<group>"; };
+		1D4FB8302813590200189F2A /* LaughingEmojiModel.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = LaughingEmojiModel.usdz; path = ../../../Downloads/LaughingEmojiModel.usdz; sourceTree = "<group>"; };
+		1D4FB8322813590600189F2A /* LaughingEmojiModel.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = LaughingEmojiModel.usdz; sourceTree = "<group>"; };
 		1D541317281200E000A236E8 /* UIforAR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIforAR.swift; sourceTree = "<group>"; };
 		1D56F69828120D3B001C05E8 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
-		1D56F69C28121303001C05E8 /* ThumbsUpImage.webp */ = {isa = PBXFileReference; lastKnownFileType = file; name = ThumbsUpImage.webp; path = ../../../../Downloads/ThumbsUpImage.webp; sourceTree = "<group>"; };
-		1D56F69D28121906001C05E8 /* Toon_Thumbs_Up.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Toon_Thumbs_Up.usdz; path = ../../../../Downloads/Toon_Thumbs_Up.usdz; sourceTree = "<group>"; };
-		1D56F69F28121EEB001C05E8 /* 3d_Poop_Emoji.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = 3d_Poop_Emoji.usdz; path = ../../../../Downloads/3d_Poop_Emoji.usdz; sourceTree = "<group>"; };
 		28456CF328077669000DD42C /* gimm_310_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gimm_310_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28456CF628077669000DD42C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28456CF828077669000DD42C /* Scene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Scene.sks; sourceTree = "<group>"; };
@@ -52,6 +59,10 @@
 		28456CEA28077669000DD42C = {
 			isa = PBXGroup;
 			children = (
+				1D4FB8302813590200189F2A /* LaughingEmojiModel.usdz */,
+				1D4FB82D2813548D00189F2A /* 3d_Poop_Emoji.usdz */,
+				1D124C78281332F700FA2BBA /* Dislike_Button.usdz */,
+				1D124C7428132E8700FA2BBA /* Like_Button.usdz */,
 				28456CF528077669000DD42C /* gimm_310_app */,
 				28456CF428077669000DD42C /* Products */,
 			);
@@ -78,9 +89,10 @@
 				28BE2B3428078BA900148E3B /* Main.storyboard */,
 				28456D032807766A000DD42C /* LaunchScreen.storyboard */,
 				28BE2B3728078F3B00148E3B /* Home.storyboard */,
-				1D56F69C28121303001C05E8 /* ThumbsUpImage.webp */,
-				1D56F69D28121906001C05E8 /* Toon_Thumbs_Up.usdz */,
-				1D56F69F28121EEB001C05E8 /* 3d_Poop_Emoji.usdz */,
+				1D124C7728132EF500FA2BBA /* Like_Button.usdz */,
+				1D124C7A281332FA00FA2BBA /* Dislike_Button.usdz */,
+				1D4FB82F2813549100189F2A /* 3d_Poop_Emoji.usdz */,
+				1D4FB8322813590600189F2A /* LaughingEmojiModel.usdz */,
 			);
 			path = gimm_310_app;
 			sourceTree = "<group>";
@@ -143,12 +155,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D4FB8312813590200189F2A /* LaughingEmojiModel.usdz in Resources */,
 				28456CF928077669000DD42C /* Scene.sks in Resources */,
 				28BE2B3828078F3B00148E3B /* Home.storyboard in Resources */,
 				28456D052807766A000DD42C /* LaunchScreen.storyboard in Resources */,
-				1D56F69E28121906001C05E8 /* Toon_Thumbs_Up.usdz in Resources */,
+				1D124C79281332F700FA2BBA /* Dislike_Button.usdz in Resources */,
+				1D124C7528132E8700FA2BBA /* Like_Button.usdz in Resources */,
+				1D4FB82E2813548D00189F2A /* 3d_Poop_Emoji.usdz in Resources */,
 				28456D022807766A000DD42C /* Assets.xcassets in Resources */,
-				1D56F6A028121EEB001C05E8 /* 3d_Poop_Emoji.usdz in Resources */,
 				28BE2B3628078BA900148E3B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
