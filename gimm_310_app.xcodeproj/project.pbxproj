@@ -24,13 +24,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1D124C7428132E8700FA2BBA /* Like_Button.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Like_Button.usdz; path = ../../../Downloads/Like_Button.usdz; sourceTree = "<group>"; };
+		1D124C7428132E8700FA2BBA /* Like_Button.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Like_Button.usdz; path = gimm_310_app/Like_Button.usdz; sourceTree = "<group>"; };
 		1D124C7728132EF500FA2BBA /* Like_Button.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Like_Button.usdz; sourceTree = "<group>"; };
-		1D124C78281332F700FA2BBA /* Dislike_Button.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Dislike_Button.usdz; path = ../../../Downloads/Dislike_Button.usdz; sourceTree = "<group>"; };
+		1D124C78281332F700FA2BBA /* Dislike_Button.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Dislike_Button.usdz; path = gimm_310_app/Dislike_Button.usdz; sourceTree = "<group>"; };
 		1D124C7A281332FA00FA2BBA /* Dislike_Button.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Dislike_Button.usdz; sourceTree = "<group>"; };
-		1D4FB82D2813548D00189F2A /* 3d_Poop_Emoji.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = 3d_Poop_Emoji.usdz; path = ../../../Downloads/3d_Poop_Emoji.usdz; sourceTree = "<group>"; };
+		1D4FB82D2813548D00189F2A /* 3d_Poop_Emoji.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = 3d_Poop_Emoji.usdz; path = gimm_310_app/3d_Poop_Emoji.usdz; sourceTree = "<group>"; };
 		1D4FB82F2813549100189F2A /* 3d_Poop_Emoji.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = 3d_Poop_Emoji.usdz; sourceTree = "<group>"; };
-		1D4FB8302813590200189F2A /* LaughingEmojiModel.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = LaughingEmojiModel.usdz; path = ../../../Downloads/LaughingEmojiModel.usdz; sourceTree = "<group>"; };
+		1D4FB8302813590200189F2A /* LaughingEmojiModel.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = LaughingEmojiModel.usdz; path = gimm_310_app/LaughingEmojiModel.usdz; sourceTree = "<group>"; };
 		1D4FB8322813590600189F2A /* LaughingEmojiModel.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = LaughingEmojiModel.usdz; sourceTree = "<group>"; };
 		1D541317281200E000A236E8 /* UIforAR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIforAR.swift; sourceTree = "<group>"; };
 		1D56F69828120D3B001C05E8 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
@@ -327,7 +327,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RCKAJ5FTR2;
+				DEVELOPMENT_TEAM = XLY8U6BRPM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -342,7 +342,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "group.gimm-310-app";
+				PRODUCT_BUNDLE_IDENTIFIER = "group.gimm-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -357,7 +357,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RCKAJ5FTR2;
+				DEVELOPMENT_TEAM = XLY8U6BRPM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -372,7 +372,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "group.gimm-310-app";
+				PRODUCT_BUNDLE_IDENTIFIER = "group.gimm-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

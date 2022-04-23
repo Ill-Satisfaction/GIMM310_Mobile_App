@@ -17,6 +17,10 @@ class ARViewController: UIViewController{
     let laughingMdl = try? Entity.load(named: "LaughingEmojiModel.usdz")
     let freePoop = try? Entity.load(named: "3d_Poop_Emoji.usdz")
     
+    var deleted: Bool = true
+    
+    let scalar = simd_make_float3(0.01, 0.01, 0.01)
+    
     let defPos = simd_make_float3(0, 1, 0)
     
 
@@ -31,12 +35,16 @@ class ARViewController: UIViewController{
     }
    
     @IBAction func LikeButton(_ sender: Any) {
+        print("Like button pressed")
         LoadModel(mdl: thumbsUpMdl!)
+        deleted = false
     
     }
     
     @IBAction func DislikeButton(_ sender: Any) {
-          LoadModel(mdl: thumbsDownMdl!)
+        print("Dislike button pressed")
+        LoadModel(mdl: thumbsDownMdl!)
+        deleted = false
         
     }
     
@@ -48,6 +56,7 @@ class ARViewController: UIViewController{
     @IBAction func LaughingButton(_ sender: Any) {
         print("Laughing button pressed")
         LoadModel(mdl: laughingMdl!)
+        deleted = false
     }
     
     @IBAction func AngryButton(_ sender: Any) {
@@ -59,11 +68,19 @@ class ARViewController: UIViewController{
     }
     
     @IBAction func ClearButton(_ sender: Any) {
-        anchor.removeChild(currMdl!)
+        if (deleted == true) {
+            print("No Object to delete!")
+        }
+        else if (deleted == false) {
+            anchor.removeChild(currMdl!)
+            deleted = true
+        }
+        
     }
     
     func LoadModel (mdl : Entity) {
         anchor.position = defPos
+        anchor.scale = scalar
         currMdl = mdl
         anchor.addChild(currMdl!)
         arView.scene.anchors.append(anchor)
