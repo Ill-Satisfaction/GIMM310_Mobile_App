@@ -12,20 +12,20 @@
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="home" id="Y6W-OH-hqX" customClass="ARViewController" customModule="gimm_310_app" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="5EZ-qb-Rvc">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="p6w-U2-qBW">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="p6w-U2-qBW">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
-                                    <arView multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x9a-NN-f9X">
+                                    <arView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x9a-NN-f9X">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="418"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="400" id="Xx5-gG-lLm"/>
                                         </constraints>
                                     </arView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xuu-bt-Gid">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xuu-bt-Gid">
                                         <rect key="frame" x="0.0" y="418" width="414" height="150"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rtx-Xh-gyC">
@@ -44,13 +44,12 @@
                                                     <action selector="DislikeButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="lgP-Gs-oUq"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Gh-g9-gxC">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3I-8N-Dhc">
                                                 <rect key="frame" x="276" y="0.0" width="138" height="150"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="HandUpIcon"/>
                                                 <connections>
-                                                    <action selector="HandButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="vuC-2X-HBY"/>
-                                                    <action selector="QuestionButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="uC3-yP-isu"/>
+                                                    <action selector="HandRaise:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="0wV-MN-NTB"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -60,52 +59,41 @@
                                             <constraint firstAttribute="height" constant="150" id="k8W-fJ-nyK"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xwY-Se-CI9">
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xwY-Se-CI9">
                                         <rect key="frame" x="0.0" y="568" width="414" height="150"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLt-DM-xvF">
-                                                <rect key="frame" x="0.0" y="0.0" width="138" height="150"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="138" id="9mN-qX-wVZ"/>
-                                                </constraints>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GhJ-gW-Nip">
+                                                <rect key="frame" x="0.0" y="0.0" width="126" height="150"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="LaughingIcon"/>
                                                 <connections>
-                                                    <action selector="LaughingButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="KkL-1D-X1M"/>
-                                                    <action selector="LikeButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="2aD-fs-Xug"/>
+                                                    <action selector="LaughingerButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Ozj-pY-Fxd"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJP-3L-IVQ">
-                                                <rect key="frame" x="138" y="0.0" width="138" height="150"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="138" id="Faj-CV-DAz"/>
-                                                </constraints>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTD-5q-4W4">
+                                                <rect key="frame" x="126" y="0.0" width="126" height="150"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="AngryIcon" imagePadding="0.0"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="AngryIcon"/>
                                                 <connections>
-                                                    <action selector="AngryButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="e5f-KS-Fa8"/>
-                                                    <action selector="DislikeButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="bXD-h1-SjH"/>
+                                                    <action selector="AngierButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="5xZ-Ya-nBZ"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHF-6d-mdQ">
-                                                <rect key="frame" x="276" y="0.0" width="138" height="150"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="139" id="6PX-HA-gQs"/>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="138" id="c54-Tt-l5M"/>
-                                                </constraints>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Swm-hc-GZj">
+                                                <rect key="frame" x="252" y="0.0" width="162" height="150"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="QuestionMark"/>
                                                 <connections>
-                                                    <action selector="QuestionButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="EvD-52-maP"/>
+                                                    <action selector="QuestionButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="HMl-mz-7kP"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemTealColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="150" id="LXP-CS-Q1X"/>
+                                            <constraint firstAttribute="height" constant="150" id="jda-Qz-ueZ"/>
+                                            <constraint firstAttribute="width" constant="400" id="tNB-Sj-kA1"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tq5-KV-TeD">
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tq5-KV-TeD">
                                         <rect key="frame" x="0.0" y="718" width="414" height="100"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nt-1h-L7o">

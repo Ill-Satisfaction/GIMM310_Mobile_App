@@ -13,6 +13,9 @@
 		1D4FB8312813590200189F2A /* LaughingEmojiModel.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 1D4FB8302813590200189F2A /* LaughingEmojiModel.usdz */; };
 		1D541318281200E000A236E8 /* UIforAR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D541317281200E000A236E8 /* UIforAR.swift */; };
 		1D56F69928120D3B001C05E8 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D56F69828120D3B001C05E8 /* ARViewController.swift */; };
+		1DBE86E9281B4172007B2816 /* AngryEmojiModel.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 1DBE86E8281B4172007B2816 /* AngryEmojiModel.usdz */; };
+		1DBE86F0281B5C2B007B2816 /* MultipeerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE86EF281B5C2B007B2816 /* MultipeerSession.swift */; };
+		1DBE86F2281B5C2E007B2816 /* MultipeerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE86F1281B5C2E007B2816 /* MultipeerSession.swift */; };
 		28456CF728077669000DD42C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28456CF628077669000DD42C /* AppDelegate.swift */; };
 		28456CF928077669000DD42C /* Scene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 28456CF828077669000DD42C /* Scene.sks */; };
 		28456CFB28077669000DD42C /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28456CFA28077669000DD42C /* Scene.swift */; };
@@ -34,6 +37,10 @@
 		1D4FB8322813590600189F2A /* LaughingEmojiModel.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = LaughingEmojiModel.usdz; sourceTree = "<group>"; };
 		1D541317281200E000A236E8 /* UIforAR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIforAR.swift; sourceTree = "<group>"; };
 		1D56F69828120D3B001C05E8 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		1DBE86E8281B4172007B2816 /* AngryEmojiModel.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = AngryEmojiModel.usdz; path = ../../../Downloads/AngryEmojiModel.usdz; sourceTree = "<group>"; };
+		1DBE86EE281B46F2007B2816 /* AngryEmojiModel.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = AngryEmojiModel.usdz; path = ../../../../Downloads/AngryEmojiModel.usdz; sourceTree = "<group>"; };
+		1DBE86EF281B5C2B007B2816 /* MultipeerSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MultipeerSession.swift; path = ../../../Downloads/MultipeerSession.swift; sourceTree = "<group>"; };
+		1DBE86F1281B5C2E007B2816 /* MultipeerSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerSession.swift; sourceTree = "<group>"; };
 		28456CF328077669000DD42C /* gimm_310_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gimm_310_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28456CF628077669000DD42C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28456CF828077669000DD42C /* Scene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Scene.sks; sourceTree = "<group>"; };
@@ -59,6 +66,8 @@
 		28456CEA28077669000DD42C = {
 			isa = PBXGroup;
 			children = (
+				1DBE86EF281B5C2B007B2816 /* MultipeerSession.swift */,
+				1DBE86E8281B4172007B2816 /* AngryEmojiModel.usdz */,
 				1D4FB8302813590200189F2A /* LaughingEmojiModel.usdz */,
 				1D4FB82D2813548D00189F2A /* 3d_Poop_Emoji.usdz */,
 				1D124C78281332F700FA2BBA /* Dislike_Button.usdz */,
@@ -84,6 +93,7 @@
 				28456CFA28077669000DD42C /* Scene.swift */,
 				28456CFC28077669000DD42C /* ViewController.swift */,
 				1D56F69828120D3B001C05E8 /* ARViewController.swift */,
+				1DBE86F1281B5C2E007B2816 /* MultipeerSession.swift */,
 				1D541317281200E000A236E8 /* UIforAR.swift */,
 				28456D012807766A000DD42C /* Assets.xcassets */,
 				28BE2B3428078BA900148E3B /* Main.storyboard */,
@@ -93,6 +103,7 @@
 				1D124C7A281332FA00FA2BBA /* Dislike_Button.usdz */,
 				1D4FB82F2813549100189F2A /* 3d_Poop_Emoji.usdz */,
 				1D4FB8322813590600189F2A /* LaughingEmojiModel.usdz */,
+				1DBE86EE281B46F2007B2816 /* AngryEmojiModel.usdz */,
 			);
 			path = gimm_310_app;
 			sourceTree = "<group>";
@@ -159,6 +170,7 @@
 				28456CF928077669000DD42C /* Scene.sks in Resources */,
 				28BE2B3828078F3B00148E3B /* Home.storyboard in Resources */,
 				28456D052807766A000DD42C /* LaunchScreen.storyboard in Resources */,
+				1DBE86E9281B4172007B2816 /* AngryEmojiModel.usdz in Resources */,
 				1D124C79281332F700FA2BBA /* Dislike_Button.usdz in Resources */,
 				1D124C7528132E8700FA2BBA /* Like_Button.usdz in Resources */,
 				1D4FB82E2813548D00189F2A /* 3d_Poop_Emoji.usdz in Resources */,
@@ -174,11 +186,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DBE86F0281B5C2B007B2816 /* MultipeerSession.swift in Sources */,
 				1D56F69928120D3B001C05E8 /* ARViewController.swift in Sources */,
 				1D541318281200E000A236E8 /* UIforAR.swift in Sources */,
 				28456CFD28077669000DD42C /* ViewController.swift in Sources */,
 				28456CFB28077669000DD42C /* Scene.swift in Sources */,
 				28456CF728077669000DD42C /* AppDelegate.swift in Sources */,
+				1DBE86F2281B5C2E007B2816 /* MultipeerSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,7 +341,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XLY8U6BRPM;
+				DEVELOPMENT_TEAM = RCKAJ5FTR2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -342,7 +356,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "group.gimm-app";
+				PRODUCT_BUNDLE_IDENTIFIER = "group.gimm-app-build";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -357,7 +371,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XLY8U6BRPM;
+				DEVELOPMENT_TEAM = RCKAJ5FTR2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -372,7 +386,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "group.gimm-app";
+				PRODUCT_BUNDLE_IDENTIFIER = "group.gimm-app-build";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
